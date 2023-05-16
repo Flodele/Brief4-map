@@ -106,4 +106,38 @@ font-size: 2em;
     width: 14em;
 }
 
-@media 
+@media (max-width:800px) {
+    .headerselect{
+    flex-direction: column;
+    }
+    
+    #headerpic{
+        margin-bottom: 4%;
+    }
+
+    #headerdiv{
+        margin-bottom: 5%;
+    }
+
+    .headerbgtext{
+        top: 45em;
+        line-height: 500%;
+    }
+
+    #searchbarinput{
+        margin-left: 10%;
+        padding: 3%;
+    }
+
+    .searchbar{
+        display: flex;
+        margin-top: -0.6%;
+    }
+}
+
+.mainh2{
+    display: flex;
+    justify-content: center;
+    border: ridge;
+    border-bottom: none;
+}
