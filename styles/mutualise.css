@@ -1,0 +1,229 @@
+*{
+    font-family: 'Candal', arial;
+    
+} 
+
+body{
+    margin: 0;
+}
+
+
+
+.headerselect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+}
+
+#logopic{
+    margin-bottom: 40%;
+}
+
+
+#header-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.headerpic{
+    display: flex
+}
+
+#test{
+    background-color: black;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+   }
+
+
+
+   a{
+    color: black;
+   }
+
+  #logoheader{
+    color: #F98C9B;
+  }
+
+   #logoheader:hover{
+    color: #2D3330;
+   }
+
+#headertext{
+    font-weight: bolder;
+color: #2D3330;
+}
+
+#headertext:hover{
+    color: #F98C9B; 
+}
+
+.searchbar{
+    background-color: #F98C9B;
+ margin-top: -0.3%;
+}
+
+#searchbarinput{
+    border: none;
+    background-color:#2d333000;
+    font-size: x-large;
+    margin-left: 10%;
+    padding: 0.4%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#searchbarinput::placeholder{
+    color: white;
+    opacity: 0.4;
+    width: 14em;
+}
+
+footer {
+    background-color: #213e4e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px 0px 200px 0px;
+    font-weight: 600;
+}
+
+a:link {
+    text-decoration: none;
+    font-size: 2em 80%;
+}
+
+footer a {
+    color: white;
+}
+
+#bottom {
+    margin-bottom: 1em;
+}
+
+.title2{
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    border: dashed 1px;
+    border-bottom: none ;
+padding: 2%;
+}
+
+.allpage{
+    margin: 5%;
+}
+
+.cards{
+    display: flex;
+    width: 88%;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+
+.card{
+    margin: 2%;
+    padding: 0.4%;
+    border: dashed 1px;
+}
+
+h3{
+    font-weight: bolder;
+    padding: 6%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: #213E4E;
+    border: solid;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+}
+
+.commander{
+        background-color: #FB8B9B; 
+        width: 100%;
+
+        border: none;
+        color: white;
+        padding: 2%;
+        text-decoration: none;
+        font-size: 16px;
+        display: flex;
+justify-content: center;
+}
+
+#desc{
+    opacity: 0.7;
+    font-size: 1.2em;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    font-family: "Open Sans";
+}
+
+#titlecard{
+    opacity: 0.7;
+    font-size: 0.9em;
+    font-family: "Open Sans";
+    display: flex;
+    justify-content: center;
+}
+
+#list{
+    opacity: 0.7;
+    font-size: 1em;
+    font-family: "Open Sans";
+}
+
+#headerdiv:hover #logoheader{
+    color: #2D3330;
+}
+
+#headerdiv:hover #headertext{
+    color: #F98C9B;
+}
+
+@media (max-width:960px) {
+    .headerselect{
+    flex-direction: column;
+    }
+
+    #headerpic{
+        margin-bottom: 4%;
+    }
+
+    #headerdiv{
+        margin-bottom: 5%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    #searchbarinput{
+        margin-left: 10%;
+        padding: 3%;
+    }
+
+    .searchbar{
+        display: flex;
+        margin-top: -0.6%;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
