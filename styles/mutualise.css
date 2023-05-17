@@ -1,15 +1,16 @@
-*{
-    font-family: 'Candal', arial;
-    
-} 
+/* FOR ALL PAGES */
 
-body{
+* {
+    font-family: 'Candal', arial;
+}
+
+body {
     margin: 0;
 }
 
+/* FOR THE HEADER = LOGO AND NAVIATION */
 
-
-.headerselect{
+.headerselect {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -17,73 +18,160 @@ body{
     margin-top: 2%;
 }
 
-#logopic{
+#logopic {
     margin-bottom: 40%;
 }
 
 
-#header-link{
+#header-link {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.2em;
 }
 
-.headerpic{
+.headerpic {
     display: flex
 }
 
-#test{
+#test {
     background-color: black;
 }
 
 a {
     outline: none;
     text-decoration: none;
-   }
+}
 
-
-
-   a{
+a {
     color: black;
-   }
+}
 
-  #logoheader{
+#logoheader {
     color: #F98C9B;
-  }
+}
 
-   #logoheader:hover{
+#logoheader:hover {
     color: #2D3330;
-   }
+}
 
-#headertext{
+#headertext {
     font-weight: bolder;
-color: #2D3330;
+    color: #2D3330;
 }
 
-#headertext:hover{
-    color: #F98C9B; 
+#headertext:hover {
+    color: #F98C9B;
 }
 
-.searchbar{
+#headerdiv:hover #logoheader {
+    color: #2D3330;
+}
+
+#headerdiv:hover #headertext {
+    color: #F98C9B;
+}
+
+.searchbar {
     background-color: #F98C9B;
- margin-top: -0.3%;
+    margin-top: -0.3%;
 }
 
-#searchbarinput{
+#searchbarinput {
     border: none;
-    background-color:#2d333000;
+    background-color: #2d333000;
     font-size: x-large;
     margin-left: 10%;
     padding: 0.4%;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#searchbarinput::placeholder{
+#searchbarinput::placeholder {
     color: white;
     opacity: 0.4;
     width: 14em;
 }
+
+/* MAIN PAGE OF THE INDEX.HTML */
+
+.title2 {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    border: dashed 1px;
+    border-bottom: none;
+    padding: 2%;
+}
+
+.allpage {
+    margin: 5%;
+}
+
+.cards {
+    display: flex;
+    width: 88%;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.card {
+    margin: 2%;
+    padding: 0.4%;
+    border: dashed 1px;
+}
+
+h3 {
+    font-weight: bolder;
+    padding: 6%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: #213E4E;
+    border: solid;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.commander {
+    background-color: #FB8B9B;
+    width: 100%;
+
+    border: none;
+    color: white;
+    padding: 2%;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+#desc {
+    opacity: 0.7;
+    font-size: 1.2em;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    font-family: "Open Sans";
+}
+
+#titlecard {
+    opacity: 0.7;
+    font-size: 0.9em;
+    font-family: "Open Sans";
+    display: flex;
+    justify-content: center;
+}
+
+#list {
+    opacity: 0.7;
+    font-size: 1em;
+    font-family: "Open Sans";
+}
+
+/* BOTTOM OF THE PAGE */
 
 footer {
     background-color: #213e4e;
@@ -107,101 +195,18 @@ footer a {
     margin-bottom: 1em;
 }
 
-.title2{
-    font-weight: bolder;
-    display: flex;
-    justify-content: center;
-    border: dashed 1px;
-    border-bottom: none ;
-padding: 2%;
-}
-
-.allpage{
-    margin: 5%;
-}
-
-.cards{
-    display: flex;
-    width: 88%;
-    margin: 0 auto;
-    justify-content: center;
-    
-}
-
-.card{
-    margin: 2%;
-    padding: 0.4%;
-    border: dashed 1px;
-}
-
-h3{
-    font-weight: bolder;
-    padding: 6%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    background-color: #213E4E;
-    border: solid;
-}
-
-h4{
-    display: flex;
-    justify-content: center;
-}
-
-.commander{
-        background-color: #FB8B9B; 
-        width: 100%;
-
-        border: none;
-        color: white;
-        padding: 2%;
-        text-decoration: none;
-        font-size: 16px;
-        display: flex;
-justify-content: center;
-}
-
-#desc{
-    opacity: 0.7;
-    font-size: 1.2em;
-    margin-bottom: 4%;
-    margin-top: 4%;
-    font-family: "Open Sans";
-}
-
-#titlecard{
-    opacity: 0.7;
-    font-size: 0.9em;
-    font-family: "Open Sans";
-    display: flex;
-    justify-content: center;
-}
-
-#list{
-    opacity: 0.7;
-    font-size: 1em;
-    font-family: "Open Sans";
-}
-
-#headerdiv:hover #logoheader{
-    color: #2D3330;
-}
-
-#headerdiv:hover #headertext{
-    color: #F98C9B;
-}
+/* ABOUT THE RESPONSIVE OF THE PAGE*/
 
 @media (max-width:960px) {
-    .headerselect{
-    flex-direction: column;
+    .headerselect {
+        flex-direction: column;
     }
 
-    #headerpic{
+    #headerpic {
         margin-bottom: 4%;
     }
 
-    #headerdiv{
+    #headerdiv {
         margin-bottom: 5%;
     }
 
@@ -211,17 +216,17 @@ justify-content: center;
         padding-top: 30px;
     }
 
-    #searchbarinput{
+    #searchbarinput {
         margin-left: 10%;
         padding: 3%;
     }
 
-    .searchbar{
+    .searchbar {
         display: flex;
         margin-top: -0.6%;
     }
 
-    .cards{
+    .cards {
         display: flex;
         flex-direction: column;
     }

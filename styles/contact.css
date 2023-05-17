@@ -1,13 +1,98 @@
 @import url('https://fr.allfont.net/allfont.css?fonts=candal');
 @import url('https://fonts.cdnfonts.com/css/open-sans');
 
-/* ABOUT ALL THE PAGE */
+/* FOR ALL PAGES */
+
+*{
+    font-family: 'Candal', arial;
+    font-weight: bolder;
+}
 
 body{
     margin: 0;
 }
 
-/* ABOUT THE CENTER OF THE PAGE */
+/* FOR THE HEADER = LOGO AND NAVIATION */
+
+.head {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerselect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+}
+
+#logopic {
+    margin-bottom: 40%;
+}
+
+#header-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.headerpic {
+    display: flex
+}
+
+#test {
+    background-color: black;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+#logoheader {
+    color: #F98C9B;
+}
+
+#headertext {
+    color: #2D3330;
+}
+
+
+#headerdiv:hover #logoheader{
+    color: #2D3330;
+}
+
+#headerdiv:hover #headertext{
+    color: #F98C9B;
+}
+
+.searchbar {
+    background-color: #F98C9B;
+    margin-top: -0.3%;
+}
+
+#searchbarinput {
+    border: none;
+    background-color: #2d333000;
+    font-size: x-large;
+    margin-left: 10%;
+    padding: 0.4%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#searchbarinput::placeholder {
+    color: white;
+    opacity: 0.4;
+    width: 14em;
+}
+
+/* MAIN PAGE OF THE INDEX.HTML */
 
 h2 {
     font-family: 'Candal';
@@ -95,7 +180,7 @@ main{
     opacity: 1;
 }
 
-
+/* BOTTOM OF THE PAGE */
 
 footer {
     background-color: #213e4e;
@@ -119,9 +204,10 @@ footer a {
     margin-bottom: 1em;
 }
 
-
+/* ABOUT THE RESPONSIVE OF THE PAGE*/
 
 @media (max-width: 960px) {
+
     footer {
         flex-direction: column;
         align-items: center;
@@ -139,96 +225,6 @@ footer a {
         margin-top: 40px;
     }
 
-}
-
-
-*{
-    font-family: 'Candal', arial;
-    font-weight: bolder;
-}
-
-.head {
-    display: flex;
-    flex-direction: column;
-}
-
-.headerselect {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2%;
-}
-
-#logopic {
-    margin-bottom: 40%;
-}
-
-
-#header-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2em;
-}
-
-.headerpic {
-    display: flex
-}
-
-#test {
-    background-color: black;
-}
-
-a {
-    outline: none;
-    text-decoration: none;
-}
-
-a {
-    color: black;
-}
-
-#logoheader {
-    color: #F98C9B;
-}
-
-#headertext {
-    color: #2D3330;
-}
-
-
-#headerdiv:hover #logoheader{
-    color: #2D3330;
-}
-
-#headerdiv:hover #headertext{
-    color: #F98C9B;
-}
-
-
-
-.searchbar {
-    background-color: #F98C9B;
-    margin-top: -0.3%;
-}
-
-#searchbarinput {
-    border: none;
-    background-color: #2d333000;
-    font-size: x-large;
-    margin-left: 10%;
-    padding: 0.4%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#searchbarinput::placeholder {
-    color: white;
-    opacity: 0.4;
-    width: 14em;
-}
-
-@media (max-width: 960px) {
     .headerselect {
         flex-direction: column;
     }
@@ -250,5 +246,5 @@ a {
         display: flex;
         margin-top: -0.6%;
     }
-
+    
 }

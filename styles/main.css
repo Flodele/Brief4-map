@@ -1,18 +1,22 @@
-*{
+/* FOR ALL PAGES */
+
+* {
     font-family: 'Candal', arial;
     font-weight: bolder;
-} 
+}
 
-body{
+body {
     margin: 0;
 }
 
-.head{
+/* FOR THE HEADER = LOGO AND NAVIATION */
+
+.head {
     display: flex;
     flex-direction: column;
 }
 
-.headerselect{
+.headerselect {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -20,61 +24,57 @@ body{
     margin-top: 2%;
 }
 
-#logopic{
+#logopic {
     margin-bottom: 40%;
 }
 
 
-#header-link{
+#header-link {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.2em;
 }
 
-.headerpic{
+.headerpic {
     display: flex
 }
 
-#test{
+#test {
     background-color: black;
 }
 
 a {
     outline: none;
     text-decoration: none;
-   }
-   
-   
-   
-   a{
+}
+
+a {
     color: black;
-   }
-   
-  #logoheader{
+}
+
+#logoheader {
     color: #F98C9B;
-  }
+}
 
-  
-
-#headertext{
-color: #2D3330;
-}   
-
-#headerdiv:hover #logoheader{
+#headertext {
     color: #2D3330;
 }
 
-#headerdiv:hover #headertext{
+#headerdiv:hover #logoheader {
+    color: #2D3330;
+}
+
+#headerdiv:hover #headertext {
     color: #F98C9B;
 }
 
-.backgroundheader{
-width: 100%;
-height: 650px;
+.backgroundheader {
+    width: 100%;
+    height: 650px;
 }
 
-.headerbgtext{
+.headerbgtext {
     position: absolute;
     top: 25em;
     display: flex;
@@ -84,37 +84,41 @@ height: 650px;
     color: white;
 }
 
-h1{
+/* PICTURE AND TEXT BETWEEN HEADER AND MAIN */
+
+h1 {
     font-size: 3em;
 }
 
-h2{
-font-size: 2em;
+h2 {
+    font-size: 2em;
 }
 
-.searchbar{
+/* TAB-BAR JUST BELOW THE PICTURE */
+
+.searchbar {
     background-color: #F98C9B;
- margin-top: -0.3%;
+    margin-top: -0.3%;
 }
 
-#searchbarinput{
+#searchbarinput {
     border: none;
-    background-color:#2d333000;
+    background-color: #2d333000;
     font-size: x-large;
     margin-left: 10%;
     padding: 0.4%;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#searchbarinput::placeholder{
+#searchbarinput::placeholder {
     color: white;
     opacity: 0.4;
     width: 14em;
 }
 
+/* MAIN PAGE OF THE INDEX.HTML */
 
-
-.mainh2{
+.mainh2 {
     color: #1E3E52;
     display: flex;
     justify-content: center;
@@ -125,45 +129,42 @@ font-size: 2em;
     padding-top: 2%;
 }
 
-
-.solucepoint{
+.solucepoint {
     display: flex;
-flex-direction: row;
-justify-content: space-around;
-margin-bottom: 5%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5%;
 }
 
-.soluce1{
+.soluce1 {
     margin-top: 5%;
     display: flex;
-flex-direction: column;
-align-items: center;
-color: #F98C9B;
-padding: 1%;
+    flex-direction: column;
+    align-items: center;
+    color: #F98C9B;
+    padding: 1%;
 }
 
-
-
-h3{
+h3 {
     margin-bottom: 0;
 }
 
-#desc{
+#desc {
     font-size: small;
     color: #808491;
-    
+
 }
 
-#desc2{
+#desc2 {
     color: #F98C9B;
     font-size: x-large;
 }
 
-.soluce{
+.soluce {
     margin: 4%;
 }
 
-.solucepoint2{
+.solucepoint2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -174,6 +175,7 @@ h3{
     line-height: 1em;
 }
 
+/* BOTTOM OF THE PAGE */
 
 footer {
     background-color: #213e4e;
@@ -197,6 +199,8 @@ footer a {
     margin-bottom: 1em;
 }
 
+/* ABOUT THE RESPONSIVE OF THE PAGE*/
+
 @media (max-width:960px) {
     footer {
         margin: 0;
@@ -204,65 +208,61 @@ footer a {
         align-items: center;
         padding-top: 30px;
     }
-    .headerselect{
-    flex-direction: column;
+
+    .headerselect {
+        flex-direction: column;
     }
-    
-    #headerpic{
+
+    #headerpic {
         margin-bottom: 4%;
     }
 
-    #headerdiv{
+    #headerdiv {
         margin-bottom: 5%;
     }
 
-    .headerbgtext{
+    .headerbgtext {
         top: 50em;
         line-height: 500%;
     }
 
-    #searchbarinput{
+    #searchbarinput {
         margin-left: 10%;
         padding: 3%;
     }
 
-    .searchbar{
+    .searchbar {
         display: flex;
         margin-top: -0.6%;
     }
 
-    .solucepoint{
+    .solucepoint {
         flex-direction: column;
     }
 
-    .solucepoint2{
+    .solucepoint2 {
         flex-direction: column;
     }
 
-    .mainh2{
-      padding: 3%;  
+    .mainh2 {
+        padding: 3%;
     }
 
-    #desc{
+    #desc {
         font-size: 1.1em;
     }
 
-    .soluce1{
+    .soluce1 {
         margin-bottom: 10%;
     }
 
-    .pagein{
-        margin: 5%;
-    }
+    #desc2 {
+        margin-top: 4%;
 
-    #desc2{
-        margin-top: 4% ;
-        
     }
 
     .fa-3xl {
         font-size: 5em;
         line-height: 1em;
+    }
 }
-}
-
